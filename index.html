@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warehouse Rescue Rush</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="game-container"></div>
+
+  <div id="hud">
+    <header id="top-bar">
+      <div class="stat-box"><span class="label">Score</span><span id="score-val" class="value">0</span></div>
+      <div class="stat-box"><span class="label">Level</span><span id="level-val" class="value">1</span></div>
+      <div class="stat-box"><span class="label">Robots</span><span id="robot-count-val" class="value">3 / 3</span></div>
+      <button id="next-level-btn" class="btn hidden">Next Level ➔</button>
+    </header>
+
+    <div id="panel-layout">
+      <section class="panel" id="robot-panel">
+        <h2>Fleet Control</h2>
+        <div id="robot-list"></div>
+      </section>
+
+      <section class="panel" id="order-panel">
+        <h2>Customer Orders</h2>
+        <div id="order-list"></div>
+      </section>
+    </div>
+
+    <div id="notifications"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
